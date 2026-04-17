@@ -1,0 +1,29 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Requid logo</title>
+  <desc id="logoDesc">An abstract quantum-inspired emblem with stylized R and orbital lines.</desc>
+  <circle cx="320" cy="246" r="206" stroke="#636363" stroke-width="5"/>
+  <ellipse cx="320" cy="250" rx="280" ry="110" stroke="#5D768A" stroke-width="5"/>
+  <ellipse cx="320" cy="260" rx="280" ry="110" transform="rotate(22 320 260)" stroke="#5D768A" stroke-width="5"/>
+  <ellipse cx="320" cy="260" rx="280" ry="110" transform="rotate(-22 320 260)" stroke="#5D768A" stroke-width="5"/>
+  <path d="M240 200H360C390 200 416 224 416 256C416 288 390 312 360 312H240V200Z" stroke="#5D768A" stroke-width="6" fill="none"/>
+  <path d="M240 312V422" stroke="#5D768A" stroke-width="6"/>
+  <path d="M240 342H336L384 422" stroke="#5D768A" stroke-width="6"/>
+  <circle cx="240" cy="200" r="14" fill="#5D768A"/>
+  <circle cx="240" cy="312" r="14" fill="#5D768A"/>
+  <circle cx="240" cy="422" r="14" fill="#5D768A"/>
+  <circle cx="384" cy="422" r="14" fill="#5D768A"/>
+
+  <path d="M205 132C280 90 364 88 440 130" stroke="#3FB187" stroke-width="4"/>
+  <path d="M177 183C148 224 142 280 164 326" stroke="#F39C12" stroke-width="4"/>
+  <path d="M165 336C186 396 232 443 295 468C363 495 439 489 500 452" stroke="#F39C12" stroke-width="4"/>
+  <path d="M476 170C518 232 524 315 490 384" stroke="#3FB187" stroke-width="4"/>
+
+  <circle cx="184" cy="170" r="16" fill="#F39C12"/>
+  <circle cx="536" cy="203" r="18" fill="#2FA4D9"/>
+  <circle cx="550" cy="415" r="15" fill="#3FB187"/>
+  <circle cx="153" cy="470" r="20" fill="#5D768A"/>
+  <circle cx="133" cy="286" r="18" fill="#2FA4D9"/>
+
+  <text x="320" y="560" text-anchor="middle" font-size="84" font-weight="700" fill="#686868" font-family="'Segoe UI', 'Noto Sans JP', sans-serif">Requid</text>
+  <text x="320" y="603" text-anchor="middle" font-size="24" fill="#9B9B9B" font-family="'Segoe UI', 'Noto Sans JP', sans-serif">Responsible Quantum Innovation and Development</text>
+</svg>
