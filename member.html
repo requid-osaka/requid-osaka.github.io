@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Meet the members of Requid (Responsible Innovation and Development)."
+  />
+  <title>Requid Members | Responsible Innovation and Development</title>
+  <style>
+    :root {
+      --bg: #070a14;
+      --card: #0f1630;
+      --text: #eaf0ff;
+      --muted: #aab7d8;
+      --accent: #7fd3ff;
+      --accent-2: #9d8cff;
+      --line: #1d2850;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top right, #15224c, var(--bg) 35%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      width: min(1080px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(7, 10, 20, 0.8);
+      backdrop-filter: blur(6px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #111;
+      border: 1px solid var(--line);
+      padding: 4px;
+    }
+
+    main {
+      padding: 3.2rem 0 4.5rem;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+
+    .intro {
+      color: var(--muted);
+      margin: 0 0 2.2rem;
+      max-width: 70ch;
+    }
+
+    .members {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
+
+    .member {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.2rem;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 1.2rem;
+      align-items: start;
+    }
+
+    .member-photo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #33406e;
+      background: #0b1230;
+    }
+
+    .member h2 {
+      margin: 0;
+      font-size: 1.35rem;
+    }
+
+    .affiliation {
+      margin: 0.35rem 0 0.9rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .bio {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .back-link {
+      margin-top: 2rem;
+      display: inline-block;
+      text-decoration: none;
+      color: #05112b;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      border-radius: 10px;
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 760px) {
+      .member {
+        grid-template-columns: 1fr;
+      }
+
+      .member-photo {
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="./index.html" aria-label="Requid home">
+        <img src="./logo.png" alt="Requid logo" class="brand-logo" />
+        <span>Requid</span>
+      </a>
+      <small>Member Profiles</small>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Project Members</h1>
+    <p class="intro">
+      Meet the members who lead and support Requid's responsible research and innovation activities in quantum technologies.
+    </p>
+
+    <section class="members" aria-label="Member list">
+      <article class="member">
+        <img class="member-photo" src="./assets/members/sho-morishita.jpg" alt="Portrait of Sho Morishita" />
+        <div>
+          <h2>Sho Morishita</h2>
+          <p class="affiliation">Research Center for ELSI, the University of Osaka</p>
+          <p class="bio">
+            Sho Morishita, an associate professor (lecturer) at Research Center on Ethical, Legal, and Social issues at the University of Osaka, is an anthropologist of science and technology. He has conducted fieldwork and collaborative research across a wide range of scientific disciplines, including earth sciences, Indonesian astronomy, synthetic biology, primatology, and quantum science. He has been engaged in RRI research since 2020 and currently serves as the project leader for RRI in quantum science.
+          </p>
+        </div>
+      </article>
+
+      <article class="member">
+        <img class="member-photo" src="./assets/members/konomi-higo.png" alt="Portrait of Konomi Higo" />
+        <div>
+          <h2>Konomi Higo</h2>
+          <p class="affiliation">Research Center for ELSI, the University of Osaka</p>
+          <p class="bio">
+            Konomi Higo, an assisstant professor at Research Center on Ethical, Legal, and Social issues at the University of Osaka. She specializes in Responsible Research and Innovation (RRI) of emerging sciences and technologies, with a focus on outreach, public engagement, and the communication of academic knowledge to broader audiences, including collaboration with industry and other stakeholders.
+          </p>
+        </div>
+      </article>
+
+      <article class="member">
+        <img class="member-photo" src="./assets/members/yusuke-nagato.jpg" alt="Portrait of Yusuke Nagato" />
+        <div>
+          <h2>Yusuke Nagato</h2>
+          <p class="affiliation">Research Center for ELSI, the University of Osaka</p>
+          <p class="bio">
+            Yusuke Nagato, an associate professor (lecturer) at Research Center on Ethical, Legal, and Social issues at the University of Osaka. His research explores the intersection of quantum science and pseudoscience, with a particular focus on investment and policy. He has recently published a paper examining the ethical implications of "hype" within the field of quantum innovation.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <a class="back-link" href="./index.html">Back to Top Page</a>
+  </main>
+
+  <footer>
+    <div class="container">Requid — Responsible Innovation and Development</div>
+  </footer>
+</body>
+</html>
