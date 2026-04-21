@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Requid Osaka（Responsible Quantum Innovation and Development）のメンバー紹介ページです。"
+  />
+  <title>Requid Osaka メンバー | Responsible Quantum Innovation and Development</title>
+  <style>
+    :root {
+      --bg: #070a14;
+      --card: #0f1630;
+      --text: #eaf0ff;
+      --muted: #aab7d8;
+      --accent: #7fd3ff;
+      --accent-2: #9d8cff;
+      --line: #1d2850;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top right, #15224c, var(--bg) 35%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      width: min(1080px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(7, 10, 20, 0.8);
+      backdrop-filter: blur(6px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #111;
+      border: 1px solid var(--line);
+      padding: 4px;
+    }
+
+    main {
+      padding: 3.2rem 0 4.5rem;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+
+    .intro {
+      color: var(--muted);
+      margin: 0 0 2.2rem;
+      max-width: 70ch;
+    }
+
+    .members {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
+
+    .group-title {
+      margin: 2.2rem 0 0.8rem;
+      font-size: 1.4rem;
+      color: var(--accent-2);
+    }
+
+    .member {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.2rem;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 1.2rem;
+      align-items: start;
+    }
+
+    .member-photo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #33406e;
+      background: #0b1230;
+    }
+
+    .member h2,
+    .member h3 {
+      margin: 0;
+      font-size: 1.35rem;
+    }
+
+    .affiliation {
+      margin: 0.35rem 0 0.9rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .bio {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .back-link {
+      margin-top: 2rem;
+      display: inline-block;
+      text-decoration: none;
+      color: #05112b;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      border-radius: 10px;
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 760px) {
+      .member {
+        grid-template-columns: 1fr;
+      }
+
+      .member-photo {
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="./index-ja.html" aria-label="Requid Osaka ホーム">
+        <img src="./logo.png" alt="Requid Osaka ロゴ" class="brand-logo" />
+        <span>Requid Osaka</span>
+      </a>
+      <small>メンバー紹介</small>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>プロジェクトメンバー</h1>
+    <p class="intro">
+      Requid Osakaにおいて、量子技術の責任ある研究・イノベーション活動を推進するメンバーを紹介します。
+    </p>
+
+    <h2 class="group-title">Board</h2>
+    <section class="members" aria-label="ボードメンバー一覧">
+      <article class="member">
+        <img class="member-photo" src="./assets/members/morishita_profile.jpg" alt="森下翔のプロフィール写真" />
+        <div>
+          <h3>森下翔</h3>
+          <p class="affiliation">大阪大学社会技術共創研究センター</p>
+          <p class="bio">
+            森下翔は大阪大学社会技術共創研究センター准教授。科学技術人類学を専門とし、地球科学、インドネシア天文学、合成生物学、霊長類学、量子科学など幅広い分野でフィールドワークと共同研究を行ってきました。2020年からRRI研究に取り組み、現在は量子科学分野におけるRRIプロジェクトのリーダーを務めています。
+          </p>
+        </div>
+      </article>
+
+      <article class="member">
+        <img class="member-photo" src="./assets/members/higo_profile.jpg" alt="肥後楽のプロフィール写真" />
+        <div>
+          <h3>肥後楽</h3>
+          <p class="affiliation">大阪大学社会技術共創研究センター</p>
+          <p class="bio">
+            肥後楽は大阪大学社会技術共創研究センター助教。新興科学技術における責任ある研究・イノベーション（RRI）を専門とし、アウトリーチ、市民参加、産業界を含む多様なステークホルダーとの連携を通じた学術知の社会実装に取り組んでいます。
+          </p>
+        </div>
+      </article>
+
+      <article class="member">
+        <img class="member-photo" src="./assets/members/nagato_profile.png" alt="長門裕介のプロフィール写真" />
+        <div>
+          <h3>長門裕介</h3>
+          <p class="affiliation">大阪大学社会技術共創研究センター</p>
+          <p class="bio">
+            長門裕介は大阪大学社会技術共創研究センター准教授。量子科学と疑似科学の交点を、投資や政策との関係を含めて研究しています。近年は、量子イノベーション分野における「ハイプ（過度な期待）」の倫理的含意を検討した論文を発表しています。
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <h2 class="group-title">Member</h2>
+    <section class="members" aria-label="メンバー一覧">
+      <article class="member">
+        <img class="member-photo" src="./assets/members/narita_profile.jpg" alt="成田まおのプロフィール写真" />
+        <div>
+          <h3>成田まお</h3>
+          <p class="affiliation">神戸大学大学院人文学研究科</p>
+          <p class="bio">
+            神戸大学大学院博士後期課程。数年前から量子情報科学の現場に関わり、実験系の立ち上げで用いられる実践知を明らかにするため、研究室の作業過程を撮影しながら調査を行っています。これまで対象としてきた歴史学よりもさらに専門外の領域ですが、参与観察を通じて理解を深めています。
+          </p>
+        </div>
+      </article>
+
+      <article class="member">
+        <img class="member-photo" src="./assets/members/enomoto_profile.jpg" alt="榎本啄杜のプロフィール写真" />
+        <div>
+          <h3>榎本啄杜</h3>
+          <p class="affiliation">大阪大学社会技術共創研究センター</p>
+          <p class="bio">
+            榎本啄杜は大阪大学社会技術共創研究センター特任研究員。専門は科学哲学・情報哲学です。「情報」という概念が分野ごとに多様に用いられることに関心があり、量子情報科学はその代表例だと考えています。また、量子情報科学をめぐる疑似科学が従来型の疑似科学と異なる特徴を示すかどうかも検討しています。
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <h2 class="group-title">Adviser</h2>
+    <section class="members" aria-label="アドバイザー一覧">
+      <article class="member">
+        <img class="member-photo" src="./assets/members/nagayama_profile.png" alt="永山翔太のプロフィール写真" />
+        <div>
+          <h3>永山翔太</h3>
+          <p class="affiliation">慶応義塾大学大学院メディアデザイン研究科</p>
+          <p class="bio">
+            慶応義塾大学で博士（メディアデザイン学）を取得。2018年にmercari R4Dのシニアリサーチャーに着任し、2022年から慶応義塾大学大学院政策・メディア研究科特任准教授を兼務。2025年4月より慶応義塾大学大学院メディアデザイン研究科准教授。Quantum Internet Task Forceディレクター、WIDE Project理事、情報処理学会量子ソフトウェア研究会運営委員、電子情報通信学会量子通信ネットワーク時限研究専門委員会専門委員も務めています。
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <a class="back-link" href="./index-ja.html">トップページへ戻る</a>
+  </main>
+
+  <footer>
+    <div class="container">Requid Osaka — Responsible Quantum Innovation and Development</div>
+  </footer>
+</body>
+</html>
