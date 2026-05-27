@@ -157,6 +157,35 @@
       color: var(--muted);
     }
 
+    .feature {
+      margin-top: 2rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .feature img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 16 / 6;
+      object-fit: cover;
+    }
+
+    .feature-body {
+      padding: 1.1rem 1.2rem 1.3rem;
+    }
+
+    .feature-body h2 {
+      margin: 0 0 0.5rem;
+    }
+
+    .feature-body p {
+      margin: 0 0 0.7rem;
+      color: var(--muted);
+    }
+
     footer {
       border-top: 1px solid var(--line);
       padding: 1rem 0 2rem;
@@ -227,6 +256,17 @@
           非専門家との対話を進めるためのパイロット施策を立ち上げています。
         </p>
       </article>
+    </section>
+
+    <section class="feature" aria-label="Featured project">
+      <img src="./assets/quantum-quest-banner.svg" alt="Quantum Quest カードゲームのサムネイル画像" />
+      <div class="feature-body">
+        <h2>Feature: Quantum Quest</h2>
+        <p>
+          量子技術の社会実装に関わる意思決定や価値の衝突を、カードゲーム形式で体験しながら学べるプロジェクトです。
+        </p>
+        <a href="https://quantum-quest-card.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 700;">https://quantum-quest-card.github.io/</a>
+      </div>
     </section>
   </main>
 
