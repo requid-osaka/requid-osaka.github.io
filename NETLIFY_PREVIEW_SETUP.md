@@ -1,28 +1,28 @@
-# Netlify で「公開前のみ」パスワード共有する手順
+# Netlify で「公開前のみ」パスワード共有する安全な手順
 
-このリポジトリには、`netlify.toml` で Basic 認証ヘッダーを付与する設定を追加しています。
+ご指摘の通り、`netlify.toml` に `Basic-Auth = "user:password"` を直接書くと、
+リポジトリ（GitHub）上に認証情報が残るため不適切です。
+
+このリポジトリでは **認証情報をコード管理しない** 方針に変更し、
+パスワード設定は Netlify 管理画面側で行う運用にします。
 
 ## 1) Netlify に接続
 1. Netlify でこの GitHub リポジトリを新規サイトとして接続
 2. Build command は空欄（静的サイトのため）
 3. Publish directory は `.`
 
-## 2) 認証情報を変更
-`netlify.toml` の以下を必ず変更してください。
+## 2) パスワード保護は Netlify 管理画面で設定
+- Netlify の Site settings からアクセス制御（Password Protection / Access Control）を設定
+- 認証情報は Netlify 側にのみ保存し、GitHub には保存しない
 
-- `preview`（ユーザー名）
-- `change-this-password`（パスワード）
+## 3) 公開前レビューの運用
+- 公開前レビュー用のブランチ（例: `staging`）をデプロイ
+- メンバーに URL とパスワードを安全な経路で共有
+- 必要に応じて本番サイトとはサイト分離（preview 用サイトと production 用サイト）
 
-```toml
-Basic-Auth = "preview:change-this-password"
-```
+## 4) 本番公開時
+- 本番サイトではパスワード保護を無効化する、または本番専用サイトを使用
+- 認証情報は定期的にローテーション
 
-## 3) メンバー限定共有の運用
-- 公開前レビュー中: この設定を有効にしたブランチ（例: `staging`）を Netlify へデプロイし、URL と ID/PW をメンバーのみに共有
-- 本番公開時: 
-  - `Basic-Auth` を削除してデプロイ、または
-  - 本番用サイトを別に分けて Basic 認証なしで配信
-
-## 4) 注意点
-- Basic 認証はブラウザ標準ダイアログです。
-- この方式は手軽ですが、厳密なアクセス制御が必要な場合は Netlify のチーム向けアクセス制御機能を検討してください。
+## 補足
+- 以前の `netlify.toml` 方式（Basic-Auth 直書き）は削除済みです。
