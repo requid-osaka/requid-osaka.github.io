@@ -6,4 +6,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Basic-Auth = "preview:change-this-password"
+    Basic-Auth = "requid:prevN3wsitE"
