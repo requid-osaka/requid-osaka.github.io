@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+
+# メンバー共有用の簡易認証（公開前確認用）
+# 本番公開時はこのヘッダーを外すか、別サイト/別ブランチで運用してください。
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Basic-Auth = "requid:prevN3wsitE"
