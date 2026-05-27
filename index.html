@@ -157,6 +157,35 @@
       color: var(--muted);
     }
 
+    .feature {
+      margin-top: 2rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .feature img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 16 / 6;
+      object-fit: cover;
+    }
+
+    .feature-body {
+      padding: 1.1rem 1.2rem 1.3rem;
+    }
+
+    .feature-body h2 {
+      margin: 0 0 0.5rem;
+    }
+
+    .feature-body p {
+      margin: 0 0 0.7rem;
+      color: var(--muted);
+    }
+
     footer {
       border-top: 1px solid var(--line);
       padding: 1rem 0 2rem;
@@ -230,6 +259,17 @@
           engage in dialogue with non-experts.
         </p>
       </article>
+    </section>
+
+    <section class="feature" aria-label="Featured project">
+      <img src="./assets/quantum-quest-banner.svg" alt="Quantum Quest card game thumbnail" />
+      <div class="feature-body">
+        <h2>Feature: Quantum Quest</h2>
+        <p>
+          A card game project that helps players explore decisions and value conflicts in the social implementation of quantum technologies.
+        </p>
+        <a href="https://quantum-quest-card.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 700;">https://quantum-quest-card.github.io/</a>
+      </div>
     </section>
   </main>
 

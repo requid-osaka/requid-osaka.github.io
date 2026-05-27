@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Quantum Quest Card Game Banner</title>
+  <desc id="desc">Futuristic blue and purple banner representing the Quantum Quest card game.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d1b4c"/>
+      <stop offset="55%" stop-color="#2a2567"/>
+      <stop offset="100%" stop-color="#0b0f2d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#73d7ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#73d7ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#bg)"/>
+  <circle cx="810" cy="280" r="260" fill="url(#glow)"/>
+  <g opacity="0.38" stroke="#9fe3ff" stroke-width="2" fill="none">
+    <ellipse cx="810" cy="280" rx="360" ry="120"/>
+    <ellipse cx="810" cy="280" rx="260" ry="88"/>
+    <ellipse cx="810" cy="280" rx="460" ry="160"/>
+  </g>
+  <g fill="#dff5ff">
+    <text x="120" y="250" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="700">QUANTUM QUEST</text>
+    <text x="120" y="320" font-size="36" font-family="Inter, Arial, sans-serif" opacity="0.92">Card Game for Responsible Quantum Futures</text>
+  </g>
+  <g fill="#bde9ff" opacity="0.78">
+    <rect x="1140" y="120" width="220" height="320" rx="18"/>
+    <rect x="1060" y="170" width="220" height="320" rx="18" opacity="0.7"/>
+    <rect x="980" y="220" width="220" height="320" rx="18" opacity="0.45"/>
+  </g>
+</svg>
